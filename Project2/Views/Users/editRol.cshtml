@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "تعديل صلاحية";
+}
+
+
+
+<table class="table m-3">
+        <input name="userId" type="hidden" value="@ViewBag.id" />
+    <thead>
+        <tr>
+            <th>
+                أسم المستخدم
+            </th>
+            <th>
+                الصلاحية
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @ViewBag.name
+            </td>
+            <td>
+                <select name="rolName" asp-items="ViewBag.rolData" ></select>
+            </td>
+
+        </tr>
+    </tbody>
+    <div>
+        <button type="submit" class="btn btn-dark m-3">إضافة</button>
+    </div>
+
+    
+</table>
+
+
